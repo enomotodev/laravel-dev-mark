@@ -1,0 +1,40 @@
+{
+    "name": "enomotodev/laravel-dev-mark",
+    "description": "Differentiate development environment from production.",
+    "keywords": ["laravel", "development"],
+    "license": "MIT",
+    "homepage": "https://enomotodev.hatenablog.com/",
+    "support": {
+        "issues": "https://github.com/enomotodev/laravel-dev-mark/issues",
+        "source": "https://github.com/enomotodev/laravel-dev-mark"
+    },
+    "authors": [
+        {
+            "name": "enomotodev",
+            "email": "enomoto.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": "^5.5|^6|^7"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelDevMark\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelDevMark\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
